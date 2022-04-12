@@ -14,7 +14,7 @@
             <p>Add New Issue:</p>
             <form action=""> 
                 <label for="description">Description</label><br>
-                <input type="text" name="" id="description" placeholder="Describe the issue"><br>
+                <input type="text" name="" id="description-input" placeholder="Describe the issue"><br>
                 <label for="serverity">Severity</label>
                 <select name="severity" id=""> 
                     <option value="low">Low</option>
@@ -22,13 +22,13 @@
                     <option value="high">High</option>
                 </select><br>
                 <label for="asign">Assigned To</label><br>
-                <input type="text" name="" id="" placeholder="Enter responsibility"><br>
-                <button type="submit" class="custom-btn">Add</button>
+                <input type="text" name="" id="assign-input" placeholder="Enter responsibility"><br>
+                <button type="submit" class="custom-btn add-btn">Add</button>
             </form>
         </div>
     </section>
     <section id="adding-responses"> 
-        <div class="new-response"> 
+        <!-- <div class="new-response"> 
             <p class="issue-id">Issue Id: 467734</p>
             <button class="open">open</button>
             <h3 class="issue-description">Issue Description</h3>
@@ -38,7 +38,9 @@
                 <button class="close custom-btn">Close</button>
                 <button class="delete custom-btn">Delete</button>
             </div>
-        </div>
+        </div> -->
     </section>
+    
+    <script src="script/script.js"></script>
 </body>
 </html>

@@ -37,6 +37,9 @@ input, select {
     border-radius: 10px;
     border: 1px solid lightgray;
 }
+input:focus {
+    color: black;
+}
 select {
     width: 97%;
 }
@@ -60,6 +63,7 @@ select {
     background-color: #eee;
     padding: 20px 15px;
     border-radius: 15px;
+    margin: 20px 0px;
 }
 .new-response .issue-id {
     font-size: 14px;
