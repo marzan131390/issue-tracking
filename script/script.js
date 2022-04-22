@@ -24,7 +24,7 @@ function displayIssue(event) {
     //creating  Element for option value as p tag  .
     let optionPara = document.createElement("p");
     optionPara.classList.add("option");
-    optionPara.innerHTML = severityValues;
+    optionPara.innerText = severityValues;
     //creating element for assign value as p tag
     let assignPara = document.createElement("p");
     assignPara.classList.add("assign");
@@ -48,8 +48,29 @@ function displayIssue(event) {
 
     descriptionInput.value = "";
     assignInput.value = "";
- 
+
+    //Selecting all Delete Buttons...
+    let deleteBtn = document.getElementsByClassName("delete");
+    for(let i = 0; i< deleteBtn.length; i++) {
+        let singleBtn = deleteBtn[i];
+        singleBtn.addEventListener("click", function(e) {
+            let allElements = e.target.parentNode.parentNode;
+            allElements.remove();
+        })
+    };
+    //Selecting all Close Buttons..
+    let closeBtn = document.querySelectorAll(".close");
+    for(let i = 0; i< closeBtn.length; i++) {
+        singleBtn = closeBtn[i];
+        singleBtn.addEventListener("click", function(e) {
+            let issueDescription = document.querySelector(".issue-description");
+            issueDescription.style.textDecoration = "line-through";
+        })
+    }
     event.preventDefault();
 };
+
+
+
 
 

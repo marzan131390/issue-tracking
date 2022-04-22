@@ -83,15 +83,17 @@ select {
     color: #333333;
 }
 .new-response .option {
-    margin: 5px 0px;
+    margin: 8px 0px;
     font-size: 20px;
+    background: url("../images/clock.png") no-repeat left;
+    padding-left: 27px;
+    
 }
 .new-response .assign {
     font-size: 18px;
+    background: url("../images/person.png") no-repeat left;
+    padding-left: 27px;
 }
-
-
-
 .close {
     background-color: #F0AD4E;
 }
